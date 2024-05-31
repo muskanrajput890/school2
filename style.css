@@ -1,0 +1,598 @@
+ /* Custom background color for the navbar */
+ .navbar {
+    background-color: #343a40; /* Set your desired navbar background color */
+}
+
+/* Custom navbar links */
+.navbar-nav .nav-link {
+    color: #fff !important; /* Set your desired navbar link color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* Set your desired navbar link hover color */
+}
+
+/* Custom styling for the navbar brand */
+.navbar-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set your desired font */
+    color: #ffc107 !important; /* Set your desired color for the brand */
+    font-size: 38px; /* Set your desired font size */
+    height: 60px; /* Set your desired height */
+    line-height: 60px; /* Vertically center the text within the navbar */
+}
+.dropdown-menu {
+    background-color: #ffffff;
+}
+
+.dropdown-item {
+    color: #343a40;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+/* Define default font size */
+.responsive-h1 {
+    font-size: 2rem; /* Default font size */
+}
+
+/* Adjust font size for small screens */
+@media screen and (max-width: 768px) {
+    .responsive-h1 {
+        font-size: 1.5rem; /* Font size for small screens */
+    }
+}
+/* Define default font size for h4 */
+.responsive-h4 {
+    font-size: 1.5rem; /* Default font size */
+}
+
+/* Adjust font size for small screens */
+@media screen and (max-width: 768px) {
+    .responsive-h4 {
+        font-size: 1.3rem; /* Font size for small screens */
+    }
+}
+
+
+
+
+
+
+
+/* Default styles */
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    text-align: center;
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: auto; /* Ensure images adjust height */
+    }
+    .carousel-caption {
+        width: 70%;
+        font-size: 0.8rem; /* Adjust caption font size */
+    }
+    .carousel-caption h1 {
+        font-size: 1.2rem; /* Adjust heading font size */
+        margin-top: 20px; /* Add margin between h1 and h5 */
+    }
+    .carousel-caption h5 {
+        font-size: 0.8rem; /* Adjust subheading font size */
+        margin-top: 15px; /* Add margin between h5 and paragraph */
+    }
+    .carousel-caption p {
+        margin-top: 15px; /* Add margin between h5 and paragraph */
+    }
+}
+
+/* Media Query for extra small screens */
+@media (max-width: 576px) {
+    .carousel-caption {
+        width: 90%; /* Adjust width for better visibility */
+        height: auto; /* Set height to auto for dynamic resizing */
+        font-size: 0.6rem; /* Further reduce font size for smaller screens */
+        margin-top: auto;
+    }
+    .carousel-caption h1 {
+        font-size: 18px; /* Further reduce heading font size */
+        margin-bottom: 3px; /* Adjust margin-bottom for h1 */
+        margin-top: 5px; /* Adjust margin-top for h1 */
+    }
+    .carousel-caption h5 {
+        font-size: 14px; /* Further reduce subheading font size */
+        margin-bottom: 5px; /* Adjust margin-bottom for h5 */
+        margin-top: 3px; /* Adjust margin-top for h5 */
+    }
+    .carousel-caption p {
+        margin-top: 10px; /* Adjust margin-top for paragraph */
+    }
+    .carousel-caption .btn {
+        font-size: 14px; /* Adjust button font size for extra small screens */
+        margin-top: 10px; /* Adjust margin-top for button */
+    }
+}
+ 
+about */
+.about {
+    width: 81%; /* Fixed width */
+    height: 81%; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about img {
+    max-width: 90%;
+    max-height: 80%;
+    display: block;
+    padding: 8px;
+    border: 3px solid gray; /* Thick border around the image */
+    
+}
+
+.about-text {
+    padding: 20px; /* Add padding to the text for better spacing */
+}
+
+.about-text span {
+    display: block; /* Make the span a block element for better spacing */
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add some bottom margin for separation */
+background: #ffc107;
+width: 120px;
+}
+
+.about-text h1 {
+    font-size: 32px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optionally make the heading bold */
+}
+
+.about-text .text-muted {
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-top: 10px;
+}
+ /* Media query for extra small screens */
+ @media (max-width: 575.98px) {
+    .about {
+        text-align: center;
+        max-width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+    .about img {
+        max-width: 100%; /* Make the image responsive */
+        height: auto;
+        margin-bottom: 10px;
+    .about-text {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+}
+
+ /* Media query for small screens */
+ @media (max-width: 576px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-text {
+        margin-top: 20px;
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 576px) and (max-width: 992px) {
+    .about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+    .about-text {
+        margin-left: 20px;
+    }
+}
+
+
+ }
+ .row {
+    display: flex;
+  }
+  
+  .col-md-4 {
+    width: 33.33%;
+  }
+  
+  .box {
+    background-color: #ccc;
+    padding: 20px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .box:hover {
+    background-color: #66ccff;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: block;
+    align-items: right;
+    margin-left: 20px;
+  }
+  
+  .content i {
+   margin: 10px;
+    color: #ffc107;
+  }
+  .truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    margin: auto; /* Center the element horizontally */
+    text-align: center; /* Center the text horizontally */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+
+/* services */
+.services {
+    display: block;
+span{
+    background: #ffc107;
+}
+ i,a{
+   color: #ffc107; 
+}
+
+
+
+
+}
+.bx {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .bx:hover {
+    background-color: #f0f0f0;
+  }
+  /* Styling for team carousel */
+.team-carousel {
+    position: relative;
+  }
+  
+  /* Styling for team item */
+  .team-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+  }
+  
+  /* Styling for social media icons */
+  .team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(230, 174, 20, 0.6);
+    border-radius: 20px;
+    border: 5px solid white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .team-item:hover .team-overlay {
+    opacity: 1;
+  }
+  
+  .team-overlay a {
+    color: #070763;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-overlay a:hover {
+    transform: scale(1.2);
+  }
+  
+  
+.testimonial-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.testimonial-text {
+    margin-bottom: 10px;
+}
+
+.testimonial-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+ 
+/* styling for footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer .col-lg-3 {
+    margin-bottom: 30px;
+}
+
+.footer h3 {
+    color: #fff;
+}
+
+.footer p, .footer a {
+    color: #ccc;
+}
+.footer a:hover {
+    color: #f8e435;
+} 
+
+.footer .btn-link {
+    display: block;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.footer .link-column {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer .copyright {
+    background-color: white;
+    padding: 15px 0;
+    
+}
+
+.footer .copyright {
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+}
+.text-start {
+    text-align: left;
+}
+/* Add this CSS to your stylesheet */
+.card-area i {
+    transition: all 0.3s ease-in-out;
+    color: #66ccff;
+}
+
+.card-area i:hover {
+    transform: scale(1.1); /* You can adjust the scale factor as per your preference */
+}
+/* Add this CSS to your stylesheet */
+.single-box h2 {
+    font-size: 2.5rem; /* Default font size for smaller screens */
+    color: #ffc107;
+}
+
+
+    .footer .single-box p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+    }
+    
+    .footer .col-md-6 {
+        margin-bottom: 30px;
+    }
+    #A {
+        background-image: url(/img/slider2.avif);
+        background-size: cover; /* Ensure the image covers the entire container */
+        background-repeat: no-repeat; /* Prevent image repetition */
+        height: 500px;
+        width: 100%; /* Ensure the image fills the container */
+        text-align: center;
+        display: flex; /* Use flexbox to center content vertically and horizontally */
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #A h1 {
+        font-size: 4rem; /* Adjust the font size as needed */
+    }
+    
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+        #A {
+            height: 300px; /* Adjust height for smaller screens */
+        }
+    
+        #A h1 {
+            font-size: 3rem; /* Adjust font size for smaller screens */
+            width: 90%; /* Adjust width for smaller screens */
+        }
+    }
+    .services {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .service-details h5 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .service-details p {
+        margin-bottom: 20px;
+    }
+    .service-details{
+        flex: 1;
+    }
+    .equal-width-height {
+        width: 100%;
+        height: 70px; /* Adjust height as needed */
+    }
+   /* Blog Grid CSS */
+/* Custom CSS for sidebar */
+.sidebar-content {
+    padding: 30px; /* Increase padding */
+}
+
+/* Style for search form input */
+.sidebar-content .search-form input[type="text"] {
+    font-size: 18px; /* Increase font size */
+}
+
+/* Style for category list */
+.sidebar-content .categories ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.sidebar-content .categories li {
+    margin-bottom: 15px; /* Increase margin */
+    font-size: 18px; /* Increase font size */
+}
+.sidebar-content .categories a{
+    color: #ffc107;
+}
+
+/* Style for recent posts */
+.sidebar-content .recent-posts h3 {
+    font-size: 20px; /* Increase font size */
+}
+
+.sidebar-content .recent-posts img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px; /* Increase margin */
+}
+/* CSS for responsiveness */
+@media (max-width: 768px) {
+    .recent-posts .font-weight-semi-bold {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
+
+/* Style for tag cloud */
+.sidebar-content .tag-cloud a {
+    font-size: 18px; /* Increase font size */
+    margin-right: 15px; /* Increase margin */
+}
+
+/* Style for plain text */
+.sidebar-content .plain-text h3 {
+    font-size: 20px; /* Increase font size */
+}
+
+
+ .content {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.content h2 {
+    color: #35424a;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.content p {
+    text-align: justify;
+}
+.float-img {
+    float: left;
+    margin-right: 20px;
+    width: 200px; 
+    height: auto;
+}  
+.comments {
+    padding: 20px;
+  }
+  
+  .comment {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .comment-img {
+    width: 50px; /* adjust the width as needed */
+    height: 50px; /* adjust the height as needed */
+    border-radius: 50%; /* create a circular shape */
+    margin-right: 20px; /* Add margin to separate image from text */
+    margin-top: 20px;
+  }
+  
+  .comment-info {
+    flex-grow: 1; /* Take up remaining space */
+  }
+  
+  .user-info {
+    margin-bottom: 10px;
+  }
+  .comment-form {
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.comment-form textarea {
+    height: 150px;
+}
+.comment-form input[type="submit"] {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.comment-form input[type="submit"]:hover {
+    background-color: #45a049;
+}  
